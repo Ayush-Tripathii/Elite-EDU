@@ -1,52 +1,49 @@
 1:"$Sreact.fragment"
-3:"/Elite-EDU/_next/static/chunks/131ilssdmyjaw.js"
-4:"/Elite-EDU/_next/static/chunks/1fl5evzrr2mwl.js"
-5:"/Elite-EDU/_next/static/chunks/0v-10yy3rdeej.js"
-6:I[32341,["$3","$4","$5"],"AuthProvider"]
-7:I[20032,["$3","$4","$5"],"SmoothScroll"]
-8:I[24179,["$3","$4","$5"],"Preloader"]
-9:I[62438,["$3","$4","$5"],"CustomCursor"]
-a:I[76902,["$3","$4","$5"],"RouteTransition"]
-b:I[39756,["$3","$4","$5"],"default"]
-c:I[37457,["$3","$4","$5"],"default"]
-d:"/Elite-EDU/_next/static/chunks/2eie5t-rw-gdl.js"
-e:I[29306,["$3","$4","$5","$d"],"default"]
-17:"$Sreact.suspense"
-18:"/Elite-EDU/_next/static/chunks/0xhjdxucjsrjc.js"
-19:"/Elite-EDU/_next/static/chunks/37n2xs3d179wl.js"
-1a:"CourseDetailClient"
-1b:I[88114,["$3","$4","$5","$18","$19"],"$1a"]
-1c:I[97367,["$3","$4","$5"],"OutletBoundary"]
-1f:"ViewportBoundary"
-20:I[97367,["$3","$4","$5"],"$1f"]
-21:"MetadataBoundary"
-22:I[97367,["$3","$4","$5"],"$21"]
-:HL["/Elite-EDU/_next/static/chunks/0waun_y6bt31x.css","style"]
-2:T5dd,{"@context":"https://schema.org","@graph":[{"@type":"EducationalOrganization","@id":"https://eliteeducation.co.in/#organization","name":"Elite Education","alternateName":"Elite Education Bhayandar","url":"https://eliteeducation.co.in","description":"Classes for CA / CMA / CS — Specialised for CA","address":{"@type":"PostalAddress","streetAddress":"Navghar Road, Opp. Bus Depot, Chandan Nagar","addressLocality":"Bhayandar East, Mira Bhayandar","addressRegion":"Maharashtra","postalCode":"401105","addressCountry":"IN"},"telephone":"+91 79000 96857","founder":{"@type":"Person","name":"Prof. Er. Manoj Kumar","jobTitle":"Founder & Lead Faculty","description":"An Engineer by profession, a Teacher by passion."},"sameAs":["https://facebook.com/eliteedu1811","https://instagram.com/elite_education_"]},{"@type":"LocalBusiness","@id":"https://eliteeducation.co.in/#localbusiness","name":"Elite Education","image":"https://eliteeducation.co.in/images/og-elite.jpg","telephone":"+91 79000 96857","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Navghar Road, Opp. Bus Depot, Chandan Nagar","addressLocality":"Bhayandar East, Mira Bhayandar","addressRegion":"Maharashtra","postalCode":"401105","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":19.3122497,"longitude":72.8534029},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"}]}]}10:X
-13:X
-13:C
-16:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$17",null,{"fallback":["$","div",null,{"className":"min-h-screen bg-[#FBF9F4] flex items-center justify-center","children":["$","div",null,{"className":"text-center","children":[["$","div",null,{"className":"w-10 h-10 rounded-full border-2 border-[#C8A15A] border-t-transparent animate-spin mx-auto mb-3"}],["$","p",null,{"className":"text-xs font-serif font-bold text-[#0F1B3D]","children":"Loading Course Masterclass..."}]]}]}],"children":["$","$L1b",null,{"slug":"ca-foundation"}]}],[["$","script","script-0",{"src":"/Elite-EDU/_next/static/chunks/0xhjdxucjsrjc.js","async":true}],["$","script","script-1",{"src":"/Elite-EDU/_next/static/chunks/37n2xs3d179wl.js","async":true}]],["$","$L1c",null,{"children":["$","$17",null,{"name":"Next.MetadataOutlet","children":"$@1d"}]}]]}],"p":"$@1e","v":null,"s":"$10"}}]]
-14:[["children",{"s":{"n":"slug","t":"d","k":"ca-foundation","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@15","v":"$13","s":"$10"},"c":"$Q16"}]]
-11:[["children",{"s":"courses","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}]}]]}],"p":"$@12","v":"$13","s":"$10"},"c":"$Q14"}]]
-0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Elite-EDU/_next/static/chunks/0waun_y6bt31x.css","precedence":"next"}],["$","script","script-0",{"src":"/Elite-EDU/_next/static/chunks/131ilssdmyjaw.js","async":true}],["$","script","script-1",{"src":"/Elite-EDU/_next/static/chunks/1fl5evzrr2mwl.js","async":true}],["$","script","script-2",{"src":"/Elite-EDU/_next/static/chunks/0v-10yy3rdeej.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"eq01Iq_variable rm6p1a_variable scroll-smooth","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"suppressHydrationWarning":true,"className":"min-h-screen font-sans bg-[#FBF9F4] text-[#0F1B3D] antialiased selection:bg-[#C8A15A] selection:text-white","children":["$","$L6",null,{"children":["$","$L7",null,{"children":[["$","$L8",null,{}],["$","$L9",null,{}],["$","$La",null,{"children":["$","$Lb",null,{"parallelRouterKey":"children","template":["$","$Lc",null,{}],"notFound":[["$","$Le",null,{}],[]]}]}]]}]}]}]]}]]}],"p":"$@f","v":null,"s":"$10"},"c":"$Q11"},"h":{"r":["$","$1","h",{"children":[null,["$","$L20",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L22",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$17",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"CA Foundation Comprehensive | Elite Education | Elite Education"}],["$","meta","1",{"name":"description","content":"Build an unshakable conceptual bedrock for your CA journey. Engineered by Prof. Er. Manoj Kumar, this program decodes Quantitative Aptitude, Accounting, Business Law, and Economics into crystal-clear mental frameworks. Special emphasis on high-speed mathematical problem solving."}],["$","meta","2",{"name":"author","content":"Prof. Er. Manoj Kumar"}],["$","link","3",{"rel":"manifest","href":"/Elite-EDU/manifest.webmanifest"}],["$","meta","4",{"name":"keywords","content":"CA classes Bhayandar East,CMA CS coaching Mira Bhayandar,CA Foundation coaching Bhayandar,CA Intermediate classes Mira Road,CA Final coaching Mumbai,Prof Manoj Kumar Maths,Elite Education Bhayandar,Quantitative Aptitude tricks,Vedic Maths Bhayandar"}],"$L23","$L24","$L25","$L26","$L27","$L28","$L29","$L2a","$L2b"]}]}],null]}],"$L2c"]}],"p":"$@2d","v":null,"s":"$10"}},"a":"$@2e","u":"$@2f","b":"b8t3MOiI2oxfRkKsd5LRG"}
-30:I[27201,["$3","$4","$5"],"IconMark"]
-1d:null
-23:["$","meta","5",{"name":"creator","content":"Elite Education"}]
-24:["$","meta","6",{"name":"publisher","content":"Elite Education"}]
-25:["$","meta","7",{"property":"og:title","content":"CA Foundation Comprehensive | Elite Education"}]
-26:["$","meta","8",{"property":"og:description","content":"Engineered by Prof. Er. Manoj Kumar, this program decodes Quantitative Aptitude, Accounting, Business Law, and Economics into crystal-clear mental frameworks. Special emphasis on high-speed mathematical problem solving."}]
-27:["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}]
-28:["$","meta","10",{"name":"twitter:title","content":"Elite Education | Classes for CA / CMA / CS"}]
-29:["$","meta","11",{"name":"twitter:description","content":"Classes for CA / CMA / CS in Bhayandar East. Directed by Prof. Er. Manoj Kumar. Maths aur English ko aasaan banate hain."}]
-2a:["$","link","12",{"rel":"icon","href":"/favicon.ico"}]
-2b:["$","$L30","13",{}]
-2c:["$","meta",null,{"name":"next-size-adjust","content":""}]
-10:300
-2f:true
-10:C
-2e:0
-15:"$undefined"
-12:"$undefined"
-f:"$undefined"
-2d:"$undefined"
-1e:"$undefined"
+3:"/Elite-EDU/_next/static/chunks/0dc25kf1u0ctq.js"
+4:"/Elite-EDU/_next/static/chunks/0v-10yy3rdeej.js"
+5:I[32341,["$3","$4"],"AuthProvider"]
+6:I[20032,["$3","$4"],"SmoothScroll"]
+7:I[24179,["$3","$4"],"Preloader"]
+8:I[62438,["$3","$4"],"CustomCursor"]
+9:I[76902,["$3","$4"],"RouteTransition"]
+a:I[39756,["$3","$4"],"default"]
+b:I[37457,["$3","$4"],"default"]
+c:"/Elite-EDU/_next/static/chunks/2eie5t-rw-gdl.js"
+d:I[29306,["$3","$4","$c"],"default"]
+16:"$Sreact.suspense"
+17:"/Elite-EDU/_next/static/chunks/0xhjdxucjsrjc.js"
+18:"/Elite-EDU/_next/static/chunks/37n2xs3d179wl.js"
+19:"CourseDetailClient"
+1a:I[88114,["$3","$4","$17","$18"],"$19"]
+1b:I[97367,["$3","$4"],"OutletBoundary"]
+1e:"ViewportBoundary"
+1f:I[97367,["$3","$4"],"$1e"]
+20:"MetadataBoundary"
+21:I[97367,["$3","$4"],"$20"]
+:HL["/Elite-EDU/_next/static/chunks/2k6gbwmte_gwx.css","style"]
+2:T5dd,{"@context":"https://schema.org","@graph":[{"@type":"EducationalOrganization","@id":"https://eliteeducation.co.in/#organization","name":"Elite Education","alternateName":"Elite Education Bhayandar","url":"https://eliteeducation.co.in","description":"Classes for CA / CMA / CS — Specialised for CA","address":{"@type":"PostalAddress","streetAddress":"Navghar Road, Opp. Bus Depot, Chandan Nagar","addressLocality":"Bhayandar East, Mira Bhayandar","addressRegion":"Maharashtra","postalCode":"401105","addressCountry":"IN"},"telephone":"+91 79000 96857","founder":{"@type":"Person","name":"Prof. Er. Manoj Kumar","jobTitle":"Founder & Lead Faculty","description":"An Engineer by profession, a Teacher by passion."},"sameAs":["https://facebook.com/eliteedu1811","https://instagram.com/elite_education_"]},{"@type":"LocalBusiness","@id":"https://eliteeducation.co.in/#localbusiness","name":"Elite Education","image":"https://eliteeducation.co.in/images/og-elite.jpg","telephone":"+91 79000 96857","priceRange":"$$","address":{"@type":"PostalAddress","streetAddress":"Navghar Road, Opp. Bus Depot, Chandan Nagar","addressLocality":"Bhayandar East, Mira Bhayandar","addressRegion":"Maharashtra","postalCode":"401105","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":19.3122497,"longitude":72.8534029},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"09:00","closes":"20:00"}]}]}f:X
+12:X
+12:C
+15:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$1","c",{"children":[["$","$16",null,{"fallback":["$","div",null,{"className":"min-h-screen bg-[#FBF9F4] flex items-center justify-center","children":["$","div",null,{"className":"text-center","children":[["$","div",null,{"className":"w-10 h-10 rounded-full border-2 border-[#C8A15A] border-t-transparent animate-spin mx-auto mb-3"}],["$","p",null,{"className":"text-xs font-serif font-bold text-[#0F1B3D]","children":"Loading Course Masterclass..."}]]}]}],"children":["$","$L1a",null,{"slug":"ca-foundation"}]}],[["$","script","script-0",{"src":"/Elite-EDU/_next/static/chunks/0xhjdxucjsrjc.js","async":true}],["$","script","script-1",{"src":"/Elite-EDU/_next/static/chunks/37n2xs3d179wl.js","async":true}]],["$","$L1b",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@1c"}]}]]}],"p":"$@1d","v":null,"s":"$f"}}]]
+13:[["children",{"s":{"n":"slug","t":"d","k":"ca-foundation","s":[]},"h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]]}],"p":"$@14","v":"$12","s":"$f"},"c":"$Q15"}]]
+10:[["children",{"s":"courses","h":96,"d":{"r":["$","$1","c",{"children":[null,["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}]}]]}],"p":"$@11","v":"$12","s":"$f"},"c":"$Q13"}]]
+0:{"t":{"t":{"s":"","h":80,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/Elite-EDU/_next/static/chunks/2k6gbwmte_gwx.css","precedence":"next"}],["$","script","script-0",{"src":"/Elite-EDU/_next/static/chunks/0dc25kf1u0ctq.js","async":true}],["$","script","script-1",{"src":"/Elite-EDU/_next/static/chunks/0v-10yy3rdeej.js","async":true}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"className":"eq01Iq_variable rm6p1a_variable scroll-smooth","children":[["$","head",null,{"children":["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$2"}}]}],["$","body",null,{"suppressHydrationWarning":true,"className":"min-h-screen font-sans bg-[#FBF9F4] text-[#0F1B3D] antialiased selection:bg-[#C8A15A] selection:text-white","children":["$","$L5",null,{"children":["$","$L6",null,{"children":[["$","$L7",null,{}],["$","$L8",null,{}],["$","$L9",null,{"children":["$","$La",null,{"parallelRouterKey":"children","template":["$","$Lb",null,{}],"notFound":[["$","$Ld",null,{}],[]]}]}]]}]}]}]]}]]}],"p":"$@e","v":null,"s":"$f"},"c":"$Q10"},"h":{"r":["$","$1","h",{"children":[null,["$","$L1f",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L21",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$16",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"CA Foundation Comprehensive | Elite Education | Elite Education"}],["$","meta","1",{"name":"description","content":"Build an unshakable conceptual bedrock for your CA journey. Engineered by Prof. Er. Manoj Kumar, this program decodes Quantitative Aptitude, Accounting, Business Law, and Economics into crystal-clear mental frameworks. Special emphasis on high-speed mathematical problem solving."}],["$","meta","2",{"name":"author","content":"Prof. Er. Manoj Kumar"}],["$","link","3",{"rel":"manifest","href":"/Elite-EDU/manifest.webmanifest"}],["$","meta","4",{"name":"keywords","content":"CA classes Bhayandar East,CMA CS coaching Mira Bhayandar,CA Foundation coaching Bhayandar,CA Intermediate classes Mira Road,CA Final coaching Mumbai,Prof Manoj Kumar Maths,Elite Education Bhayandar,Quantitative Aptitude tricks,Vedic Maths Bhayandar"}],["$","meta","5",{"name":"creator","content":"Elite Education"}],["$","meta","6",{"name":"publisher","content":"Elite Education"}],"$L22","$L23","$L24","$L25","$L26","$L27","$L28"]}]}],null]}],"$L29"]}],"p":"$@2a","v":null,"s":"$f"}},"a":"$@2b","u":"$@2c","b":"7ZciQecJwNdEKDc6g2Oo0"}
+2d:I[27201,["$3","$4"],"IconMark"]
+1c:null
+22:["$","meta","7",{"property":"og:title","content":"CA Foundation Comprehensive | Elite Education"}]
+23:["$","meta","8",{"property":"og:description","content":"Engineered by Prof. Er. Manoj Kumar, this program decodes Quantitative Aptitude, Accounting, Business Law, and Economics into crystal-clear mental frameworks. Special emphasis on high-speed mathematical problem solving."}]
+24:["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}]
+25:["$","meta","10",{"name":"twitter:title","content":"Elite Education | Classes for CA / CMA / CS"}]
+26:["$","meta","11",{"name":"twitter:description","content":"Classes for CA / CMA / CS in Bhayandar East. Directed by Prof. Er. Manoj Kumar. Maths aur English ko aasaan banate hain."}]
+27:["$","link","12",{"rel":"icon","href":"/favicon.ico"}]
+28:["$","$L2d","13",{}]
+29:["$","meta",null,{"name":"next-size-adjust","content":""}]
+f:300
+2c:true
+f:C
+2b:0
+14:"$undefined"
+11:"$undefined"
+e:"$undefined"
+2a:"$undefined"
+1d:"$undefined"

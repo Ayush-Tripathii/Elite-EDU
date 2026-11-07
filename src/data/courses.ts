@@ -63,7 +63,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Morning & Evening Available]",
     lectureCount: 68,
     badge: "Specialised Track",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Core Elite Faculty",
     highlights: [
       "Signature speed tricks for Quantitative Aptitude & Statistics",
@@ -169,7 +169,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Morning Regular & Weekend Batches]",
     lectureCount: 140,
     badge: "Flagship Program",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Specialist CA Mentors",
     highlights: [
       "Exemption strategy for Costing & Financial Management",
@@ -267,7 +267,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Early Morning & Weekend Sessions]",
     lectureCount: 160,
     badge: "Advanced Level",
-    ratingPlaceholder: "4.95 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.95 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Senior CA Fellows",
     highlights: [
       "Rigorous case studies modeled on current ICAI case-based formats",
@@ -331,7 +331,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Afternoon & Evening Cohorts]",
     lectureCount: 54,
     badge: "High Pass Ratio",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & CMA Subject Mentors",
     highlights: [
       "Business Mathematics & Statistics special shortcuts by Manoj Sir",
@@ -391,7 +391,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Daily Regular Batches]",
     lectureCount: 120,
     badge: "Core Specialty",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & CMA Experts",
     highlights: [
       "Mastery in Operations Management & Strategic Management",
@@ -441,7 +441,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Weekend Masterclasses]",
     lectureCount: 110,
     badge: "Executive Tier",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Senior Faculty",
     highlights: [
       "SCM case study frameworks",
@@ -486,7 +486,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Flexible Cohorts]",
     lectureCount: 45,
     badge: "100% Exam Oriented",
-    ratingPlaceholder: "4.85 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.85 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & CS Legal Mentors",
     highlights: [
       "Legal aptitude and Constitution of India basics made fascinating",
@@ -545,7 +545,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Regular Batches]",
     lectureCount: 130,
     badge: "Rigorous Legal Focus",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Practicing CS Faculty",
     highlights: [
       "Secretarial drafting and board resolution practices",
@@ -588,7 +588,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Weekend Modules]",
     lectureCount: 95,
     badge: "Pinnacle Program",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Practicing Company Secretaries",
     highlights: [
       "Practical NCLT / NCLAT drafting and appearance techniques",
@@ -632,7 +632,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: After-School & Weekend Slots]",
     lectureCount: 48,
     badge: "Manoj Sir's Signature",
-    ratingPlaceholder: "5.0 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "5.0 / 5.0",
     faculty: "Prof. Er. Manoj Kumar (Engineer & Master Educator)",
     highlights: [
       "Zero-fear approach: conceptual clarity before formula memorization",
@@ -710,7 +710,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Weekend Masterclass]",
     lectureCount: 24,
     badge: "Speed Mastery",
-    ratingPlaceholder: "4.95 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.95 / 5.0",
     faculty: "Prof. Er. Manoj Kumar",
     highlights: [
       "Mental multiplication of 2-digit, 3-digit, and 4-digit numbers",
@@ -762,7 +762,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Morning Batches]",
     lectureCount: 52,
     badge: "High Efficiency",
-    ratingPlaceholder: "4.9 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.9 / 5.0",
     faculty: "Prof. Er. Manoj Kumar",
     highlights: [
       "Unit digit and digital sum methods to eliminate options without solving",
@@ -807,7 +807,7 @@ export const coursesData: Course[] = [
     batchTimingPlaceholder: "[BATCH TIMING: Evening & Weekend Sessions]",
     lectureCount: 36,
     badge: "Essential Skill",
-    ratingPlaceholder: "4.95 / 5.0 [VERIFIED]",
+    ratingPlaceholder: "4.95 / 5.0",
     faculty: "Prof. Er. Manoj Kumar & Language Specialists",
     highlights: [
       "The 12 Tenses matrix decoded through a single logical chart",

@@ -55,7 +55,7 @@ export default function LoginPage() {
     if (res.success) {
       router.push("/dashboard");
     } else {
-      setErrorMsg(res.error || "Verification failed.");
+      setErrorMsg(res.error || "Incorrect code. Please check and try again.");
     }
   };
 
@@ -231,7 +231,7 @@ export default function LoginPage() {
                     disabled={loading}
                     className="w-full py-3.5 rounded-full bg-[#0F1B3D] hover:bg-[#1A2E63] text-white text-xs font-sans font-bold tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2"
                   >
-                    <span>{loading ? "Sending OTP..." : "Send Verification OTP"}</span>
+                    <span>{loading ? "Sending..." : "Send Access OTP"}</span>
                     <ArrowRight className="w-3.5 h-3.5 text-[#C8A15A]" />
                   </button>
                 </form>
@@ -261,7 +261,7 @@ export default function LoginPage() {
                     disabled={loading}
                     className="w-full py-3.5 rounded-full bg-[#0F1B3D] hover:bg-[#1A2E63] text-white text-xs font-sans font-bold tracking-wider uppercase transition-all shadow-md flex items-center justify-center gap-2"
                   >
-                    <span>{loading ? "Verifying..." : "Verify & Continue"}</span>
+                    <span>{loading ? "Checking..." : "Continue to Dashboard"}</span>
                   </button>
 
                   <button

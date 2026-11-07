@@ -99,7 +99,7 @@ export default function AdminPage() {
                 Elite Education Admin Control
               </h1>
               <p className="text-xs md:text-sm text-[#0F1B3D]/70 font-sans mt-1">
-                Manage YouTube video IDs, verify student sign-ups, and toggle course enrollment permissions.
+                Manage YouTube video IDs, review student sign-ups, and toggle course enrollment permissions.
               </p>
             </div>
 

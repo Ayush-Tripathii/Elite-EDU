@@ -22,3 +22,4 @@ export function RouteTransition({ children }: { children: React.ReactNode }) {
     </AnimatePresence>
   );
 }
+

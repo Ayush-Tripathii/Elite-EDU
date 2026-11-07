@@ -32,7 +32,7 @@ export function TestimonialsCarousel() {
           </h2>
 
           <p className="mt-3 text-xs font-mono uppercase tracking-widest text-[#C8A15A] font-semibold">
-            [PLACEHOLDER TESTIMONIAL SLOTS — VERIFIED TEMPLATE]
+            [STUDENT EXPERIENCES & FEEDBACK]
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export function TestimonialsCarousel() {
                     {current.name}
                   </h4>
                   <p className="text-xs text-[#0F1B3D]/60 font-sans">
-                    {current.year} • Verified Student
+                    {current.year} • Elite Student
                   </p>
                 </div>
               </div>

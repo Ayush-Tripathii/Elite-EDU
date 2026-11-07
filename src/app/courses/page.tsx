@@ -51,7 +51,7 @@ export default function CoursesPage() {
             </h1>
 
             <p className="mt-3 text-sm md:text-base text-[#0F1B3D]/75 font-sans leading-relaxed">
-              Every course features verified demo lectures by Prof. Er. Manoj Kumar and our core faculty. Choose your track to begin streaming.
+              Every course features signature demo lectures by Prof. Er. Manoj Kumar and our core faculty. Choose your track to begin streaming.
             </p>
           </div>
 

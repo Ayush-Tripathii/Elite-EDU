@@ -38,7 +38,7 @@ export default function ResultsPage() {
             </h1>
 
             <p className="mt-4 text-xs font-mono uppercase tracking-widest text-[#C8A15A] font-semibold">
-              [ACADEMIC RESULTS & RANKER HONORS — VERIFIED DATA SLOTS]
+              [ACADEMIC RESULTS & RANKER HONORS]
             </p>
 
             <p className="mt-4 text-sm md:text-base text-[#0F1B3D]/75 font-sans leading-relaxed">
@@ -86,9 +86,7 @@ export default function ResultsPage() {
 
                 <div className="mt-6 pt-4 border-t border-[#C8A15A]/15 flex items-center justify-between text-[11px] font-mono text-[#0F1B3D]/60">
                   <span>Elite Education Alumnus</span>
-                  <span className="px-2 py-0.5 rounded bg-amber-50 text-amber-900 border border-amber-200">
-                    Verified
-                  </span>
+                  <span className="text-[#C8A15A] font-semibold">Bhayandar Cohort</span>
                 </div>
               </div>
             ))}

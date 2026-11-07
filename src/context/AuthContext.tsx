@@ -221,7 +221,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     registrationData?: Partial<UserProfile>
   ) => {
     if (otp !== "123456" && otp.length !== 6) {
-      return { success: false, error: "Invalid verification code. Use demo code 123456." };
+      return { success: false, error: "Invalid passcode. Use demo code 123456." };
     }
 
     const cleanPhone = phone.trim();

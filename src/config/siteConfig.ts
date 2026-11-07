@@ -172,7 +172,7 @@ export const siteConfig = {
   testimonials: [
     {
       id: "test-1",
-      name: "[VERIFIED STUDENT A]",
+      name: "[STUDENT NAME - CA]",
       course: "CA Foundation & Intermediate",
       scoreOrRank: "[STUDENT SCORE / RANK]",
       quote:
@@ -182,7 +182,7 @@ export const siteConfig = {
     },
     {
       id: "test-2",
-      name: "[VERIFIED STUDENT B]",
+      name: "[STUDENT NAME - CMA]",
       course: "CMA Intermediate",
       scoreOrRank: "[EXEMPTION IN COSTING]",
       quote:
@@ -192,7 +192,7 @@ export const siteConfig = {
     },
     {
       id: "test-3",
-      name: "[VERIFIED STUDENT C]",
+      name: "[STUDENT NAME - FOUNDATION]",
       course: "Class 12 & Foundation Maths",
       scoreOrRank: "[98% IN MATHEMATICS]",
       quote:

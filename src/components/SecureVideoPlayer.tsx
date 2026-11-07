@@ -54,15 +54,18 @@ export function SecureVideoPlayer({
     let interval: NodeJS.Timeout;
     if (isPlaying && !isLocked) {
       interval = setInterval(() => {
-        setProgressSec((prev) => {
-          const updated = prev + 1;
-          updateWatchProgress(courseId, lecture.order, updated);
-          return updated;
-        });
+        setProgressSec((prev) => prev + 1);
       }, 1000);
     }
     return () => clearInterval(interval);
-  }, [isPlaying, isLocked, courseId, lecture.order, updateWatchProgress]);
+  }, [isPlaying, isLocked]);
+
+  // Sync progress periodically outside state updater
+  useEffect(() => {
+    if (progressSec > 0 && progressSec % 5 === 0) {
+      updateWatchProgress(courseId, lecture.order, progressSec);
+    }
+  }, [progressSec, courseId, lecture.order, updateWatchProgress]);
 
   // Send postMessage commands to YouTube IFrame API safely
   const sendIframeCommand = (command: string, args: unknown[] = []) => {

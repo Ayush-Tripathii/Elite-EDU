@@ -310,29 +310,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
   };
 
-  const updateWatchProgress = (
-    courseId: string,
-    lectureOrder: number,
-    seconds: number,
-    completed = false
-  ) => {
-    setWatchProgress((prev) => {
-      const courseProg = prev[courseId] || {};
-      const updated = {
-        ...prev,
-        [courseId]: {
-          ...courseProg,
-          [lectureOrder]: {
-            completed: completed || (courseProg[lectureOrder]?.completed ?? false),
-            progressSeconds: seconds,
-            lastWatched: new Date().toISOString(),
+  const updateWatchProgress = React.useCallback(
+    (
+      courseId: string,
+      lectureOrder: number,
+      seconds: number,
+      completed = false
+    ) => {
+      setWatchProgress((prev) => {
+        const courseProg = prev[courseId] || {};
+        const updated = {
+          ...prev,
+          [courseId]: {
+            ...courseProg,
+            [lectureOrder]: {
+              completed: completed || (courseProg[lectureOrder]?.completed ?? false),
+              progressSeconds: seconds,
+              lastWatched: new Date().toISOString(),
+            },
           },
-        },
-      };
-      localStorage.setItem(STORAGE_KEY_PROGRESS, JSON.stringify(updated));
-      return updated;
-    });
-  };
+        };
+        try {
+          localStorage.setItem(STORAGE_KEY_PROGRESS, JSON.stringify(updated));
+        } catch {
+          // LocalStorage fallback
+        }
+        return updated;
+      });
+    },
+    []
+  );
 
   const getCourseProgress = (courseId: string, totalLectures: number): number => {
     if (!watchProgress[courseId] || totalLectures === 0) return 0;

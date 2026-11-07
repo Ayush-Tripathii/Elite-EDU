@@ -60,7 +60,7 @@ export function HeroParallaxSymbols() {
           animate={{
             x: mouseOffset.x * item.factor,
             y: mouseOffset.y * item.factor,
-            rotate: [0, item.factor > 0 ? 8 : -8, 0],
+            rotate: mouseOffset.x * (item.factor > 0 ? 8 : -8),
           }}
           transition={{
             type: "spring",

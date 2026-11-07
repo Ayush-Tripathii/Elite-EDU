@@ -5,6 +5,8 @@ import { siteConfig } from "@/config/siteConfig";
 import { AuthProvider } from "@/context/AuthContext";
 import { Preloader } from "@/components/Preloader";
 import { CustomCursor } from "@/components/CustomCursor";
+import { SmoothScroll } from "@/components/SmoothScroll";
+import { RouteTransition } from "@/components/RouteTransition";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-serif-display",
@@ -156,13 +158,15 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen font-sans bg-[#FBF9F4] text-[#0F1B3D] antialiased selection:bg-[#C8A15A] selection:text-white">
         <AuthProvider>
-          {/* Monogram drawing preloader */}
-          <Preloader />
+          <SmoothScroll>
+            {/* Monogram drawing preloader */}
+            <Preloader />
 
-          {/* Luxury interactive cursor */}
-          <CustomCursor />
+            {/* Luxury interactive cursor */}
+            <CustomCursor />
 
-          {children}
+            <RouteTransition>{children}</RouteTransition>
+          </SmoothScroll>
         </AuthProvider>
       </body>
     </html>

@@ -23,7 +23,17 @@ import { getAllCourses, Course, Lecture } from "@/data/courses";
 import { siteConfig } from "@/config/siteConfig";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { EnquiryRecord } from "@/app/api/enquiries/route";
+export interface EnquiryRecord {
+  id: string;
+  name: string;
+  phone: string;
+  email?: string;
+  courseInterest: string;
+  city?: string;
+  message?: string;
+  createdAt: string;
+  status?: "new" | "contacted" | "enrolled";
+}
 
 export default function AdminPage() {
   const { user, allStudents, toggleEnrollment } = useAuth();
@@ -42,10 +52,23 @@ export default function AdminPage() {
         const res = await fetch("/api/enquiries");
         if (res.ok) {
           const data = await res.json();
-          setEnquiries(data.enquiries || []);
+          if (data.enquiries && data.enquiries.length > 0) {
+            setEnquiries(data.enquiries);
+            return;
+          }
         }
-      } catch (err) {
-        console.error("Failed to load enquiries:", err);
+      } catch {
+        // Fallback for static host
+      }
+
+      // Check localStorage for offline/static enquiries
+      try {
+        const stored = localStorage.getItem("elite_enquiries");
+        if (stored) {
+          setEnquiries(JSON.parse(stored));
+        }
+      } catch {
+        // Safe fallback
       }
     }
     loadEnquiries();

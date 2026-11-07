@@ -23,7 +23,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { SecureVideoPlayer } from "@/components/SecureVideoPlayer";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
-import { SecuredLecture } from "@/app/api/courses/[slug]/lectures/route";
+import { SecuredLecture } from "@/data/courses";
 
 export function CourseDetailClient({ slug }: { slug: string }) {
   const course = getCourseBySlug(slug);
@@ -34,33 +34,71 @@ export function CourseDetailClient({ slug }: { slug: string }) {
   const [loadingLectures, setLoadingLectures] = useState(true);
   const [openModuleIdx, setOpenModuleIdx] = useState<number | null>(0);
 
-  // Fetch lectures via authenticated server API route
+  // Compute secured lecture permissions directly on client or via API
   useEffect(() => {
     if (!course) return;
 
-    let isMounted = true;
-    async function fetchLectures() {
-      try {
-        setLoadingLectures(true);
-        const res = await fetch(`/api/courses/${slug}/lectures`);
-        if (res.ok) {
-          const data = await res.json();
-          if (isMounted && data.lectures) {
-            setSecuredLectures(data.lectures);
-          }
-        }
-      } catch (err) {
-        console.error("Failed to load lecture playlist:", err);
-      } finally {
-        if (isMounted) setLoadingLectures(false);
-      }
-    }
+    const isEnrolled =
+      user?.role === "admin" ||
+      (user?.enrolledCourses && user.enrolledCourses.includes(course.id));
 
-    fetchLectures();
-    return () => {
-      isMounted = false;
-    };
-  }, [slug, user, course]);
+    const computed: SecuredLecture[] = course.lectures.map((lec) => {
+      // 1. Visitor is logged out
+      if (!user) {
+        return {
+          order: lec.order,
+          title: lec.title,
+          duration: lec.duration,
+          description: lec.description,
+          isFreeDemo: lec.isFreeDemo,
+          access: "locked",
+          lockReason: "signup_required",
+          youtubeId: null,
+        };
+      }
+
+      // 2. User is enrolled or admin
+      if (isEnrolled) {
+        return {
+          order: lec.order,
+          title: lec.title,
+          duration: lec.duration,
+          description: lec.description,
+          isFreeDemo: lec.isFreeDemo,
+          access: "unlocked",
+          youtubeId: lec.youtubeId,
+        };
+      }
+
+      // 3. User is logged in with free account (Lecture 1 demo unlocked)
+      if (lec.order === 1 || lec.isFreeDemo) {
+        return {
+          order: lec.order,
+          title: lec.title,
+          duration: lec.duration,
+          description: lec.description,
+          isFreeDemo: true,
+          access: "unlocked",
+          youtubeId: lec.youtubeId,
+        };
+      }
+
+      // Subsequent lectures locked for free account
+      return {
+        order: lec.order,
+        title: lec.title,
+        duration: lec.duration,
+        description: lec.description,
+        isFreeDemo: false,
+        access: "locked",
+        lockReason: "enrollment_required",
+        youtubeId: null,
+      };
+    });
+
+    setSecuredLectures(computed);
+    setLoadingLectures(false);
+  }, [course, user]);
 
   if (!course) {
     return (

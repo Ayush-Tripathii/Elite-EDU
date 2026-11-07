@@ -40,17 +40,28 @@ export default function ContactPage() {
     try {
       setSubmitting(true);
       setErrorMsg("");
-      const res = await fetch("/api/enquiries", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
 
-      if (res.ok) {
-        setSubmitted(true);
-      } else {
-        setErrorMsg("Failed to submit enquiry. Please call or WhatsApp us directly.");
+      // Try API route first, fallback gracefully to localStorage on static GitHub Pages
+      try {
+        const res = await fetch("/api/enquiries", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+        if (res.ok) {
+          setSubmitted(true);
+          return;
+        }
+      } catch {
+        // Fallback for static host
       }
+
+      // Save to localStorage for demo / static hosting
+      const stored = localStorage.getItem("elite_enquiries");
+      const list = stored ? JSON.parse(stored) : [];
+      list.unshift({ ...formData, id: `enq-${Date.now()}`, createdAt: new Date().toISOString() });
+      localStorage.setItem("elite_enquiries", JSON.stringify(list));
+      setSubmitted(true);
     } catch {
       setErrorMsg("An unexpected error occurred. Please contact us via WhatsApp.");
     } finally {

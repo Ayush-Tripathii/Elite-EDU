@@ -19,6 +19,17 @@ export interface Lecture {
   isFreeDemo?: boolean;
 }
 
+export interface SecuredLecture {
+  order: number;
+  title: string;
+  duration: string;
+  description?: string;
+  isFreeDemo?: boolean;
+  access: "unlocked" | "locked";
+  lockReason?: "signup_required" | "enrollment_required";
+  youtubeId: string | null;
+}
+
 export interface SyllabusModule {
   moduleNumber: number;
   title: string;

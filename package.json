@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:gh-pages": "cross-env DEPLOY_TARGET=gh-pages next build",
+    "predeploy": "npm run build:gh-pages",
+    "deploy": "gh-pages -d out -t true",
     "start": "next start",
     "lint": "eslint"
   },
@@ -25,8 +28,10 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.4.5",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

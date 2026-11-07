@@ -1,8 +1,10 @@
 import { MetadataRoute } from "next";
 import { getAllCourses } from "@/data/courses";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://eliteeducation.co.in";
+  const baseUrl = "https://ayush-tripathii.github.io/Elite-EDU";
   const courses = getAllCourses();
 
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -59,4 +61,3 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [...staticRoutes, ...courseRoutes];
 }
-

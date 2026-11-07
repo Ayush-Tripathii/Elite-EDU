@@ -19,7 +19,7 @@ import {
 } from "lucide-react";
 import { siteConfig } from "@/config/siteConfig";
 import { useAuth } from "@/context/AuthContext";
-import { SecuredLecture } from "@/app/api/courses/[slug]/lectures/route";
+import { SecuredLecture } from "@/data/courses";
 
 interface SecureVideoPlayerProps {
   courseSlug: string;

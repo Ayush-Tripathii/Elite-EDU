@@ -36,7 +36,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function CourseDetailPage({ params }: CoursePageProps) {
+async function CourseDetailContent({ params }: CoursePageProps) {
   const { slug } = await params;
   const course = getCourseBySlug(slug);
 
@@ -44,6 +44,10 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
     notFound();
   }
 
+  return <CourseDetailClient slug={slug} />;
+}
+
+export default function CourseDetailPage({ params }: CoursePageProps) {
   return (
     <Suspense
       fallback={
@@ -57,7 +61,7 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
         </div>
       }
     >
-      <CourseDetailClient slug={slug} />
+      <CourseDetailContent params={params} />
     </Suspense>
   );
 }

@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif-display), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-sans-body), "Plus Jakarta Sans", system-ui, sans-serif;
+  --color-gold: #C8A15A;
+  --color-gold-light: #DFBA75;
+  --color-gold-dark: #9F7E3B;
+  --color-navy: #0F1B3D;
+  --color-navy-light: #1A2E63;
+  --color-ivory: #FBF9F4;
+}
+
+@layer base {
+  :root {
+    --background: #FBF9F4;
+    --foreground: #0F1B3D;
+    --card: #FFFFFF;
+    --card-foreground: #0F1B3D;
+    --primary: #0F1B3D;
+    --primary-foreground: #FBF9F4;
+    --gold: #C8A15A;
+    --gold-light: #DFBA75;
+    --gold-dark: #9F7E3B;
+    --gold-muted: rgba(200, 161, 90, 0.15);
+    --navy-light: #1A2E63;
+    --navy-muted: rgba(15, 27, 61, 0.65);
+    --sage-wash: #F2F6F3;
+    --blue-wash: #F0F5FA;
+    --border-light: rgba(200, 161, 90, 0.22);
+  }
+
+  * {
+    border-color: var(--border-light);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--background);
+    color: var(--foreground);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  body {
+    background-color: #FBF9F4;
+    color: #0F1B3D;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+  }
+
+  /* Selection styling */
+  ::selection {
+    background-color: #C8A15A;
+    color: #FFFFFF;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FBF9F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C8A15A66;
+  border-radius: 9999px;
+  border: 2px solid #FBF9F4;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C8A15A;
+}
+
+/* Subtle luxury grain texture overlay */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* Gold gradient text utility */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #A88134 0%, #C8A15A 50%, #E8C98B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-navy-gradient {
+  background: linear-gradient(135deg, #0F1B3D 0%, #1A2E63 60%, #294488 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hairline glass effect */
+.glass-nav {
+  background: rgba(251, 249, 244, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(200, 161, 90, 0.18);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(200, 161, 90, 0.2);
+  box-shadow: 0 10px 30px -10px rgba(15, 27, 61, 0.05), 0 1px 3px rgba(200, 161, 90, 0.1);
+}
+
+.glass-card-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(200, 161, 90, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(15, 27, 61, 0.1), 0 0 20px rgba(200, 161, 90, 0.18);
+}
+
+/* Magnetic / Shine sweep animation */
+.shine-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-sweep::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(30deg);
+  transition: all 0.75s ease;
+  pointer-events: none;
+}
+
+.shine-sweep:hover::after {
+  left: 130%;
+}
+
+/* Marquee keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Floating animation */
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-12px) rotate(2deg); }
+}
+
+@keyframes floatReverse {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(10px) rotate(-2deg); }
+}
+
+.animate-float-slow {
+  animation: floatSlow 7s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 8s ease-in-out infinite;
+}
+
+/* Monogram draw keyframes */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -148,6 +148,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      suppressHydrationWarning
       className={`${cormorant.variable} ${jakarta.variable} scroll-smooth`}
     >
       <head>
@@ -156,7 +157,10 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
       </head>
-      <body className="min-h-screen font-sans bg-[#FBF9F4] text-[#0F1B3D] antialiased selection:bg-[#C8A15A] selection:text-white">
+      <body
+        suppressHydrationWarning
+        className="min-h-screen font-sans bg-[#FBF9F4] text-[#0F1B3D] antialiased selection:bg-[#C8A15A] selection:text-white"
+      >
         <AuthProvider>
           <SmoothScroll>
             {/* Monogram drawing preloader */}

@@ -7,7 +7,7 @@
     "build": "next build",
     "build:gh-pages": "cross-env DEPLOY_TARGET=gh-pages next build",
     "predeploy": "npm run build:gh-pages",
-    "deploy": "gh-pages -d out -t true",
+    "deploy": "gh-pages -d out --dotfiles",
     "start": "next start",
     "lint": "eslint"
   },
